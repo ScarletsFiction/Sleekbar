@@ -1,0 +1,14 @@
+{
+  "name": "sleekbar",
+  "license": "MIT",
+  "description": "Customizable, small, and fast scroll bar",
+  "version": "0.1.0",
+  "dependencies": {
+    "node-sass": "^5.0.0",
+    "terser": "^5.6.0-beta"
+  },
+  "main": "dist/sleekbar.min.js",
+  "scripts":{
+  	"compile": "node ./utils/compile.js"
+  }
+}

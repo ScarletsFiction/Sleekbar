@@ -1,0 +1,64 @@
+.sleekbar-content{
+  position:relative;
+  display:inline-block;
+  transform: translateZ(1px);
+  height: 100%;
+  width: 100%;
+
+  &::-webkit-scrollbar {
+    width:0px;
+    height:0px;
+  }
+}
+
+.sleekbar-instance{
+  overflow:visible !important;
+}
+
+.sleekbar-visible{
+  /*display: inline-block;*/
+  margin:0;
+  /*width:auto !important;*/
+  /*height:auto !important;*/
+}
+
+.sleekbar-container{
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.sleekbar-y, .sleekbar-x{
+  display: inline-block;
+  vertical-align: top;
+
+  .handle{
+    background: #00000066;
+    border-radius: 20px;
+    backface-visibility: hidden;
+  }
+}
+
+.sleekbar-y{
+  position: absolute;
+  margin-left: -12px;
+
+  .handle{
+    transform-origin: top;
+    width: 10px;
+    height: 20px;
+  }
+}
+
+.sleekbar-x{
+  position: absolute;
+  margin-top: -4px;
+  left: 0;
+  bottom: 0;
+
+  .handle{
+    transform-origin: left;
+    width: 20px;
+    height: 10px;
+  }
+}
